@@ -223,6 +223,9 @@ void OBSBasicSettings::UpdateKeyLink()
 	} else if (serviceName.startsWith("Restream.io")) {
 		streamKeyLink = QTStr(
 			"https://restream.io/settings/streaming-setup?from=OBS");
+	} else if (serviceName.startsWith("YouStreamer")) {
+		streamKeyLink = QTStr(
+			"https://app.youstreamer.com/stream");
 	} else if (serviceName == "Facebook Live") {
 		streamKeyLink +=
 			QTStr("https://www.facebook.com/live/create?ref=OBS");
